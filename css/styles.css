@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Gamja+Flower&display=swap');
+
+@font-face {
+    font-family: 'Simpsonsfont';
+    src: url('../css/Simpsonfont.otf') format('woff2'),
+      url('fonts/opensans-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*-BODY & HEADER------------------------------------------------------------------*/
+header{
+   /* background: linear-gradient(to bottom, black, darkorange);*/
+
+    background-image: url("../media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -10vw;
+
+    border: 2px solid black;
+    box-shadow: 2px 2px 20px black;
+    width: 100vw;
+}
+
+header .top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5% 4%;
+    margin: 10px auto;
+}
+
+.top img{
+    width: 320px;
+    padding: 2%;
+}
+
+header h2{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+.title{
+    border: 5px solid darkgoldenrod;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px black;
+    background-color: white;
+}
+.title h1{
+    font-size: 8vw;
+    text-align: center;
+    font-family: "Simpsonsfont", sans-serif;
+    text-shadow: 2px 2px 10px white;
+    margin: 0vw auto;
+}
+
+/*-NAV------------------------------------------------------------------------*/
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.2s;
+    border: 2px solid black;
+    width: 10rem;
+    padding: 2% 2%;
+    margin: 20px 0px;
+    box-shadow: 2px 2px 2px black;
+    background: black;
+    
+}
+nav li:hover{
+    transform: translateX(-10px);
+    list-style: square;
+}
+
+nav a{
+    color: white;
+    transition: 0.5s;
+}
+
+
+nav a:hover{
+    color: darkorange;
+}
+
+
+/*-LINKS---------------------------------------------------------------------*/
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*-SECCIONES----------------------------------------------------------------------*/
+
+.top-section{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding-left: 2%;
+    font-size: 2.5em;
+    margin-bottom: 0.5%;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    box-shadow: 5px 5px 10px black;
+    margin: 2% auto;
+}
+article img{
+    height: fit-content;
+    width: 280px;
+    object-fit: cover;
+    
+}
+
+article h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 2%;
+}
+
+article ol{
+    line-height: 1.5em;
+    margin: 20px auto;
+    text-align: left;
+    margin-left: 3rem;
+    list-style: square;
+    list-style-position: outside;
+}
+article button img{
+    width: 32px;
+    vertical-align: middle;
+    padding: 2%;
+    margin-right: 2%;
+}
+
+.whatsapp{
+    
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.whatsapp button{
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: -2px -2px 5px black;
+}
+
+.carrito{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    font-weight: bold;
+    box-shadow: -2px -2px 5px black;
+}
+
+article button:hover{
+    background-color: rgb(221, 235, 255);
+    cursor: pointer;
+}
+
+/*--FOOTER --------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 0.5% 2%;
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    box-shadow: -2px -2px 2px black;
+    background: orange;
+    align-items: center;
+    line-height: 2;
+}
+
+footer img{
+    vertical-align: middle;
+    margin-right: 1em;
+    transition: 2s;
+}
+footer img:hover{
+    transform: rotate(720deg);
+}
+footer li{
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 0px 0px 5px white;
+}
+footer li:hover{
+    color: white;
+}
+
+.redesimg{
+    display: inline;
+    vertical-align: middle;
+    list-style:none;
+    margin-right: 50px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .top img {
+        width: 80vw;
+        padding: 2%;
+    }
+
+    header h2{
+        font-size: 5vw;
+    }
+
+}
